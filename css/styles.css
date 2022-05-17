@@ -70,6 +70,7 @@ ul {
   align-items: center;
 }
 .site-logo {
+  margin-right: 93px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -79,7 +80,6 @@ ul {
 }
 .header-logo-studio {
   color: #000000;
-  margin-right: 93px;
 }
 .header-list {
   display: flex;
@@ -205,7 +205,9 @@ ul {
 .work-item:not(:last-child) {
   margin-right: 30px;
 }
-.work-pic {
+img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 /* ------------- TEAM ----------------- */
@@ -255,7 +257,11 @@ ul {
   padding-bottom: 60px;
   background-color: var(--footer-bgd-color);
 }
-.footer-list {
+.site-logo.footer {
+  margin: 0;
+  padding: 0;
+}
+.footer-address {
   margin-top: 20px;
   font-style: normal;
 }
