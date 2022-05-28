@@ -112,8 +112,6 @@ img {
 .header-link-select:focus {
   color: var(--link-selection-solor);
 }
-.mail-icon {
-}
 .header-contact-list {
   display: flex;
   align-items: center;
