@@ -475,9 +475,11 @@ img {
 .projects-card-text {
   width: 370px;
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  /* border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee; */
   background-color: var(--header-bgd-color);
 }
 .projects-pic {
