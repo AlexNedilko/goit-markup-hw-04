@@ -32,6 +32,7 @@ body {
 }
 .link {
   text-decoration: none;
+  color: currentColor;
 }
 h1,
 h2,
@@ -71,6 +72,7 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 /* ------------- HEADER ----------------- */
 .header {
   border-bottom: 1px solid #ececec;
@@ -255,9 +257,6 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-image {
-  display: block;
-}
 .team-card-text {
   width: 270px;
   padding-top: 30px;
@@ -278,49 +277,62 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  /* color: var(--text-color); */
 }
 .member-social {
   width: 206px;
   height: 44px;
   margin-left: auto;
   margin-right: auto;
+  color: #afb1b8;
 }
 .member-links-list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-
 .member-links-list .item {
   width: 44px;
   height: 44px;
-  background-color: var(--header-bgd-color);
   border-radius: 50%;
-
-  outline: 1px solid red;
-}
-.member-social-icon {
-  width: 20px;
-  height: 20px;
 }
 .member-social-link {
-  color: #afb1b8;
+  padding: 10px 12px;
+  border-radius: 50%;
+}
+.member-links-list .item:hover,
+.member-links-list .item:focus {
+  background-color: var(--link-selection-solor);
+  color: var(--header-bgd-color);
+}
+.member-social-icon {
+  fill: currentColor;
 }
 /* ------------- CLIENTS----------------- */
 .clients-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .clients-item {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  object-position: 50% 50%;
+}
+.clients-link {
+  padding: 16px 32px;
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--link-selection-solor);
+  color: var(--link-selection-solor);
+}
+.clients-icon {
+  fill: currentColor;
+}
 /* ------------- FOOTER----------------- */
 .footer {
   display: flex;
@@ -386,6 +398,9 @@ img {
 .company-social-links {
   display: flex;
 }
+.company-social-link {
+  padding: 12px;
+}
 .company-social-links .item:not(:last-child) {
   margin-right: 10px;
 }
@@ -395,6 +410,13 @@ img {
   border-radius: 50%;
   color: var(--header-bgd-color);
   background: rgba(255, 255, 255, 0.1);
+}
+.company-social-links .item:hover,
+.company-social-links .item:focus {
+  background-color: var(--link-selection-solor);
+}
+.company-social-icon {
+  fill: currentColor;
 }
 /* ------------- page 2 - PORTFOLIO ----------------- */
 .filters-list {
@@ -474,9 +496,3 @@ img {
 }
 
 /* training */
-
-/* .clients-itdfem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
