@@ -135,6 +135,9 @@ img {
 .header-contact-link:focus {
   color: var(--link-selection-solor);
 }
+.contacts-icon {
+  fill: currentColor;
+}
 /* ------------- HERO ----------------- */
 .section-hero {
   padding: 200px 0px;
